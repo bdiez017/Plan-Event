@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanEvent</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password1">Password</string>
+    <string name="hint_password2"> Verify password</string>
+    <string name="hint_name">Fullname</string>
+    <string name="hint_title">Title</string>
+    <string name="hint_place">Location: city or country</string>
+    <string name="hint_date">YYYY-MM-DD</string>
+    <string name="hint_description">Description</string>
+    <string name="hint_tag">Tag</string>
+    <string name="error_email">Invalid email address</string>
+    <string name="error_password">Enter password again</string>
+    <string name="enter_title">Enter title</string>
+    <string name="enter_place">Enter location: city or country</string>
+    <string name="enter_date">Enter date</string>
+    <string name="enter_description">Enter description</string>
+    <string name="enter_tag">Select a tag</string>
+    <string name="btn_login">LOGIN</string>
+    <string name="btn_register">REGISTER</string>
+    <string name="btn_create">CREATE</string>
+    <string name="btn_link_to_register">Not a member? Sign up now.</string>
+    <string name="btn_link_to_login">Already registred! Login Me.</string>
+    <string name="btn_link_to_mainAfterCreate">Go back! I dont want to create an event</string>
+    <string name="btn_link_to_mainAfterSearch">Go back! I dont want to search anything</string>
+    <string name="btn_link_to_main">Back to menu!</string>
+    <string name="btn_link_to_search">Back! Search again</string>
+    <string name="welcome">Welcome</string>
+    <string name="btn_logout">LOGOUT</string>
+    <string name="btn_myEventsCreated">My events</string>
+    <string name="btn_followedEvents">Followed Events</string>
+    <string name="name">Fullname</string>
+    <string name="createEvent">Your Event</string>
+    <string name="searchEvent">Search Events</string>
+    <string name="eventsFound">Events: </string>
+    <string name="btn_EventSearch">Search events</string>
+    <string name="btn_createEvent">Create event</string>
+    <string name="btn_searchEvent">Search events</string>
+    <string name="btn_calendar">Calendar</string>
+    <string name="btn_follow">Follow</string>
+    <string name="btn_unfollow">Unfollow</string>
+    <string name="btn_delete">Delete</string>
+    <string name="tag">Tag:</string>
+    <string name="tag_prompt">Choose a tag</string>
+    <string name="error_connection">There is no internet connection</string>
+    <string name="dateNotValid">Date is not valid</string>
+    <string name="registerSuccessfully"> "User successfully registered. Try login now!"</string>
+    <string name="enterDetails">Please enter your details</string>
+    <string name="verifyPassword">Verify password is not the same!</string>
+    <string name="enterAllDetails">Please enter all the details!</string>
+    <string name="eventCreatedSuccesfully">Event successfully created!</string>
+    <string name="eventDeletedSuccesfully">Event successfully deleted!</string>
+
+    <string name="enterAllCredentials">¡Por favor, introduce todas las credenciales!</string>
+    <string name="loginIn">Login in ...</string>
+    <string name="register">Registering user...</string>
+    <string name="searching">Searching ...</string>
+    <string name="creating">Creating ...</string>
+    <string name="enterDetailsSearch">Please enter any data</string>
+
+
+</resources>

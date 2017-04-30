@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+ <string-array name="tag">
+  <item></item>
+  <item>Music</item>
+  <item>Cinema</item>
+  <item>Art</item>
+  <item>Sports</item>
+  <item>Meal</item>
+  <item>Concert</item>
+  <item>Party</item>
+  <item>Other</item>
+ </string-array>
+</resources>

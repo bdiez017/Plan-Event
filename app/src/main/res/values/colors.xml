@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="darkPink">#86022f</color>
+    <color name="hintPink">#11a91849</color>
+    <color name="pink">#5cecaac0</color>
+    <color name="bg_login">#26ae90</color>
+    <color name="bg_register">#2e3237</color>
+    <color name="bg_main">#428bca</color>
+    <color name="btn_create">#608c83</color>
+    <color name="btn_search">#608c83</color>
+    <color name="bg_createEvent">#a7f5e4</color>
+    <color name="white">#ffffff</color>
+    <color name="grey">#4e4747</color>
+    <color name="grey_hint">#999999</color>
+    <color name="blue">#26ae90</color>
+    <color name="btn_searchByLocation">#eceef1</color>
+    <color name="input_login">#222222</color>
+    <color name="input_login_hint">#999999</color>
+    <color name="input_register">#888888</color>
+    <color name="input_register_bg">#3b4148</color>
+    <color name="input_register_hint">#5e6266</color>
+    <color name="btn_login">#26ae90</color>
+    <color name="btn_login_bg">#eceef1</color>
+    <color name="lbl_name">#333333</color>
+    <color name="black">#333333</color>
+    <color name="eventBackground">#bbff6861</color>
+    <color name="btn_logut_bg">#ff6861</color>
+</resources>

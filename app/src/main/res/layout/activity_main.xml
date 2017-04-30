@@ -1,0 +1,98 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/btn_login_bg"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_createEvent"
+            android:textColor="@color/white"
+            android:id="@+id/btnCreateEvent"
+            android:elevation="0dp"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:fontFamily="casual" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_EventSearch"
+            android:textColor="@color/white"
+            android:id="@+id/btnSearchEvent"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:elevation="2dp" />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_calendar"
+            android:textColor="@color/white"
+            android:id="@+id/btnCalendar"
+            android:textAllCaps="false"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:elevation="2dp" />
+
+
+        <Button
+            android:id="@+id/btnMyEventsCreated"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_myEventsCreated"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:textAllCaps="false"
+            android:elevation="2dp" />
+
+        <Button
+            android:id="@+id/btnLogout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_logut_bg"
+            android:text="@string/btn_logout"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="casual"
+            android:textAllCaps="false"
+            android:elevation="2dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/welcome"
+        android:textSize="36sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="39dp"
+        android:fontFamily="casual"
+        android:textStyle="normal|bold" />
+
+</RelativeLayout>

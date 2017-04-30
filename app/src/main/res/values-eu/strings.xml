@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanEvent</string>
+    <string name="hint_email">Emaila</string>
+    <string name="hint_password1">Pasahitza</string>
+    <string name="hint_password2"> Pasahitza berretsi</string>
+    <string name="hint_name">Izen osoa</string>
+    <string name="hint_title">Izenburua</string>
+    <string name="hint_place">Jatorria: hiria edo herrialdea</string>
+    <string name="hint_date">YYYY-MM-DD</string>
+    <string name="hint_description">Laburpena</string>
+    <string name="hint_tag">Etiketa</string>
+    <string name="error_email">Email helbidea gaizki da</string>
+    <string name="error_password">Berridatzi pasahitza</string>
+    <string name="enter_title">Izenburua idatzi</string>
+    <string name="enter_place">Jatorria sakatu edota idatzi: hiria o herrialdea</string>
+    <string name="enter_date">Data sakatu</string>
+    <string name="enter_description">Laburpena idatzi</string>
+    <string name="enter_tag">Etiketa bat hautatu</string>
+    <string name="btn_login">ABIARAZI</string>
+    <string name="btn_register">IZENA EMAN</string>
+    <string name="btn_create">SORTU</string>
+    <string name="btn_link_to_register">¿Berria zara? Izena eman</string>
+    <string name="btn_link_to_login">¡Kidea naiz! Abiarazi</string>
+    <string name="btn_link_to_mainAfterCreate">Ez dut ekitaldirik sortu nahi ¡Atzera! </string>
+    <string name="btn_link_to_mainAfterSearch">Ez dut bilaketarik egin nahi ¡Atzera!</string>
+    <string name="btn_link_to_main">¡Hasieratu!</string>
+    <string name="btn_link_to_search">Bilaketa berria ¡Atzera!</string>
+    <string name="welcome">Ongi-Etorri</string>
+    <string name="btn_logout">BUKATU</string>
+    <string name="btn_followedEvents">Ekitaldi jarraituak</string>
+    <string name="name">Izen osoa</string>
+    <string name="createEvent">Zure ekitaldia</string>
+    <string name="searchEvent">Ekitaldeak ikusi</string>
+    <string name="eventsFound">Ekitaldiak: </string>
+    <string name="btn_EventSearch">Ekitaldiak topatu</string>
+    <string name="btn_createEvent">Ekitaldi berri bat sortu</string>
+    <string name="btn_searchEvent">Ekitaldiak topatu</string>
+    <string name="btn_calendar">Egutegia</string>
+    <string name="btn_follow">Jarraitu</string>
+    <string name="btn_unfollow">Jarraitzen utzi</string><!-- Utzi-->
+    <string name="tag">Etiketa:</string>
+    <string name="tag_prompt">Etiketa bat hautatu</string>
+    <string name="error_connection">Ez dago Interneteko konexiorik</string>
+    <string name="dateNotValid">Data ez da zuzena</string>
+    <string name="registerSuccessfully"> "Izena zuzen emanda dago. ¡Abiarazi orain!"</string>
+    <string name="enterDetails">Mesedez, zure datuak idatzi ezazu</string>
+    <string name="verifyPassword">¡Gako ezberdinak dira!</string>
+    <string name="enterAllDetails">Mesedez, datu guztiak idatzi</string>
+    <string name="eventCreatedSuccesfully">¡Ekitaldia zuzen sortu da!</string>
+    <string name="enterAllCredentials">¡Mesedez, egiaztari guztiak idatzi ezazu!</string>
+    <string name="loginIn">Abiarazten ...</string>
+    <string name="register">Erabiltzaile berria sortzen ...</string>
+    <string name="searching">Bilatzen ...</string>
+    <string name="enterDetailsSearch">Mesedez, idatzi daturen bat bilatzeko</string>
+    <string name="creating">Sortzen ...</string>
+
+
+</resources>

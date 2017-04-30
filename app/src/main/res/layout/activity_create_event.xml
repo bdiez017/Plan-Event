@@ -1,0 +1,170 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/bg_createEvent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:weightSum="1">
+
+        <TextView
+            android:text="@string/createEvent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center"
+            android:id="@+id/YourEvent"
+            android:layout_weight="0.24"
+            android:textColor="@color/btn_create"
+            android:textSize="30sp"
+            android:fontFamily="casual" />
+
+        <EditText
+            android:id="@+id/titleEvent"
+            android:layout_below="@+id/YourEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_title"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint" />
+
+        <EditText
+            android:id="@+id/placeEvent"
+            android:layout_below="@+id/space2"
+            android:layout_width="270dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_place"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_alignRight="@+id/space2"
+            android:layout_alignEnd="@+id/space2" />
+
+        <Space
+            android:layout_width="270dp"
+            android:layout_height="5dp"
+            android:layout_below="@+id/titleEvent"
+            android:id="@+id/space2"
+            />
+
+        <ImageButton
+            android:id="@+id/locationButton"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/titleEvent"
+            android:adjustViewBounds="false"
+            android:background="@color/bg_createEvent"
+            android:src="@mipmap/ic_geo" />
+        <!-- android:adjustViewBounds="false" -->
+
+        <EditText
+            android:id="@+id/dateEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_date"
+            android:inputType="text"
+            android:padding="10dp"
+            android:singleLine="true"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_weight="0.55"
+            android:layout_below="@+id/placeEvent"/>
+
+        <EditText
+            android:id="@+id/descriptionEvent"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@color/white"
+            android:hint="@string/hint_description"
+            android:inputType="text"
+            android:padding="10dp"
+            android:textColor="@color/input_login"
+            android:textColorHint="@color/input_login_hint"
+            android:layout_weight="0.95"
+            android:textAlignment="gravity"
+            android:layout_below="@+id/dateEvent"/>
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:layout_below="@+id/descriptionEvent"
+            android:id="@+id/space1"/>
+
+        <TextView
+            android:id="@+id/tagTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/space1"
+            android:padding="10dp"
+            android:text="@string/tag"
+            android:textColor="@color/grey"
+            android:textSize="20sp" />
+
+        <Spinner
+            android:id="@+id/tagSpinnerCreateEvent"
+            android:entries="@array/tag"
+            android:prompt="@string/tag_prompt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:layout_weight="0.13"
+            android:layout_below="@+id/tagTextView"/>
+
+
+
+        <!-- Create Button -->
+
+        <Button
+            android:id="@+id/btnCreate"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dip"
+            android:background="@color/btn_login_bg"
+            android:text="@string/btn_create"
+            android:textColor="@color/btn_create"
+            android:fontFamily="casual"
+            android:textSize="18sp"
+            android:textStyle="normal|bold"
+            android:layout_below="@+id/tagSpinnerCreateEvent"/>
+
+        <!-- Link to Main Screen -->
+
+        <Button
+            android:id="@+id/btnLinkToMainScreen"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dip"
+            android:background="@null"
+            android:text="@string/btn_link_to_mainAfterCreate"
+            android:textAllCaps="false"
+            android:textColor="@color/grey"
+            android:textSize="15dp"
+            android:layout_below="@+id/btnCreate"/>
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

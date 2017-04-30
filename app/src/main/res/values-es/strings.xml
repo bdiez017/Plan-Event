@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">PlanEvent</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password1">Contraseña</string>
+    <string name="hint_password2"> Verificar contraseña</string>
+    <string name="hint_name">Nombre completo</string>
+    <string name="hint_title">Título</string>
+    <string name="hint_place">Lugar: ciudad o país</string>
+    <string name="hint_date">YYYY-MM-DD</string>
+    <string name="hint_description">Descripción</string>
+    <string name="hint_tag">Etiqueta</string>
+    <string name="error_email">Dirección de email no válida</string>
+    <string name="error_password">Introduce la contraseña de nuevo</string>
+    <string name="enter_title">Introduce título</string>
+    <string name="enter_place">Introduce lugar: ciudad o país</string>
+    <string name="enter_date">Introduce fecha</string>
+    <string name="enter_description">Introduce descripción</string>
+    <string name="enter_tag">Selecciona una etiqueta</string>
+    <string name="btn_login">ENTRAR</string>
+    <string name="btn_register">REGISTRARSE</string>
+    <string name="btn_create">CREAR</string>
+    <string name="btn_link_to_register">¿Todavía no eres miembro? Regístrate ahora</string>
+    <string name="btn_link_to_login">¡Ya estoy registrado! Entrar</string>
+    <string name="btn_link_to_mainAfterCreate">No quiero crear un evento ¡Ir atrás! </string>
+    <string name="btn_link_to_mainAfterSearch">No quiero realizar ninguna búsqueda ¡Ir atrás!</string>
+    <string name="btn_link_to_main">¡Ir al menú!</string>
+    <string name="btn_link_to_search">Nueva búsqueda ¡Atrás!</string>
+    <string name="welcome">Bienvenid@</string>
+    <string name="btn_logout">SALIR</string>
+    <string name="btn_followedEvents">Eventos seguidos</string>
+    <string name="name">Nombre completo</string>
+    <string name="createEvent">Tu evento</string>
+    <string name="searchEvent">Buscar eventos</string>
+    <string name="eventsFound">Eventos: </string>
+    <string name="btn_EventSearch">Buscar eventos</string>
+    <string name="btn_createEvent">Crear evento</string>
+    <string name="btn_searchEvent">Buscar eventos</string>
+    <string name="btn_calendar">Calendario</string>
+    <string name="btn_follow">Seguir</string>
+    <string name="btn_unfollow">No seguir</string>
+    <string name="tag">Etiqueta:</string>
+    <string name="tag_prompt">Elige una etiqueta</string>
+    <string name="error_connection">No hay conexión a Internet</string>
+    <string name="dateNotValid">Fecha no válida</string>
+    <string name="registerSuccessfully"> "Usuario registrado satisfactoriamente. ¡Entra ahora!"</string>
+    <string name="enterDetails">Por favor, introduce tus datos</string>
+    <string name="verifyPassword">¡La contraseña no es igual!</string>
+    <string name="enterAllDetails">Por favor, introduce todos los datos</string>
+    <string name="eventCreatedSuccesfully">¡Evento creado con éxito!</string>
+    <string name="enterAllCredentials">¡Por favor, introduce todas las credenciales!</string>
+    <string name="loginIn">Entrando ...</string>
+    <string name="register">Registrando usuario ...</string>
+    <string name="searching">Buscando ...</string>
+    <string name="creating">Creando ...</string>
+    <string name="enterDetailsSearch">Por favor introduce algún dato para buscar</string>
+
+    <string name="eventDeletedSuccesfully">Evento borrado con éxito</string>
+    <string name="btn_delete">Borrar</string>
+    <string name="btn_myEventsCreated">Mis eventos</string>
+
+
+
+</resources>

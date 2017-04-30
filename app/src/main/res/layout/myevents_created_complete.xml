@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ImageView
+        android:id="@+id/icon"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logoplanevent" />
+
+
+    <TextView
+        android:text="DescriptionView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:id="@+id/descriptionMyEventComplete"
+        android:layout_marginTop="11dp"
+        android:layout_below="@+id/descriptionText"
+        android:layout_toRightOf="@+id/icon" />
+
+    <TextView
+        android:text="TitleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/titleMyEventComplete"
+        android:textSize="30dp"
+        android:fontFamily="casual"
+        android:layout_marginBottom="33dp"
+        android:layout_above="@+id/locationMyEventComplete"
+        android:layout_toRightOf="@+id/icon"
+        android:layout_toEndOf="@+id/icon"
+        android:layout_marginLeft="70dp"
+        android:layout_marginStart="70dp" />
+
+    <TextView
+        android:text="LocationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/locationMyEventComplete"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:layout_marginTop="18dp"
+        android:layout_below="@+id/icon"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="11dp"
+        android:layout_marginStart="11dp" />
+
+    <TextView
+        android:text="DateView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/dateMyEventComplete"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:layout_alignBaseline="@+id/locationMyEventComplete"
+        android:layout_alignBottom="@+id/locationMyEventComplete"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="16dp"
+        android:layout_marginEnd="16dp" />
+
+    <TextView
+        android:text="Description:"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:id="@+id/descriptionText"
+        android:layout_marginTop="26dp"
+        android:layout_below="@+id/tagMyEventComplete"
+        android:layout_alignLeft="@+id/locationMyEventComplete"
+        android:layout_alignStart="@+id/locationMyEventComplete" />
+
+    <TextView
+        android:text="TagView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tagMyEventComplete"
+        android:textSize="20dp"
+        android:fontFamily="casual"
+        android:layout_below="@+id/locationMyEventComplete"
+        android:layout_alignLeft="@+id/locationMyEventComplete"
+        android:layout_alignStart="@+id/locationMyEventComplete" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/btn_logut_bg"
+        android:text="@string/btn_delete"
+        android:textColor="@color/white"
+        android:id="@+id/btnDelete"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:fontFamily="casual"
+        android:elevation="2dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="125dp" />
+
+
+</RelativeLayout>

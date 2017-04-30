@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:orientation="vertical">
+
+    <com.desai.vatsal.mydynamiccalendar.MyDynamicCalendar
+        android:id="@+id/myCalendar"
+        android:layout_width="match_parent"
+        android:layout_height="365dp"
+        android:layout_weight="0.51" />
+
+    <Button
+        android:id="@+id/btnFollowedEvents"
+        android:layout_width="271dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dip"
+        android:background="@color/btn_logut_bg"
+        android:elevation="2dp"
+        android:fontFamily="casual"
+        android:text="@string/btn_followedEvents"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp" />
+
+    <!-- android:layout_height="66dp" -->
+</LinearLayout>
