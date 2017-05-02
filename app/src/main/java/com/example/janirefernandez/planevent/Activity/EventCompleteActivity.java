@@ -1,22 +1,21 @@
 package com.example.janirefernandez.planevent.Activity;
 
 import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
+import android.provider.CalendarContract;
 import android.view.View;
 import android.widget.Button;
-import android.widget.ListView;
 import android.widget.TextView;
 
 import com.example.janirefernandez.planevent.Helper.FunctionsHelper;
 import com.example.janirefernandez.planevent.Helper.SQLiteEvents;
-import com.example.janirefernandez.planevent.Helper.SQLiteHandlerUsers;
 import com.example.janirefernandez.planevent.R;
+import com.google.api.services.calendar.Calendar;
 
-import org.json.JSONObject;
-
-import java.util.HashMap;
+import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created by JanireFernandez on 04/04/2017.
@@ -40,7 +39,7 @@ public class EventCompleteActivity extends Activity {
         descriptionEventComplete = (TextView) findViewById(R.id.descriptionEventComplete);
         tagEventComplete = (TextView) findViewById(R.id.tagEventComplete);
         locationEventComplete = (TextView) findViewById(R.id.locationEventComplete);
-        dateEventComplete= (TextView) findViewById(R.id.dateEventComplete);
+        dateEventComplete = (TextView) findViewById(R.id.dateEventComplete);
         btnFollow = (Button) findViewById(R.id.btnFollow);
 
         titleEventComplete.setText(getIntent().getExtras().getString("titleListEvent"));
@@ -51,7 +50,7 @@ public class EventCompleteActivity extends Activity {
 
 
         // SQLite database handler
-        db = new SQLiteEvents(getApplicationContext(),new FunctionsHelper().datebaseName(getApplicationContext()));
+        db = new SQLiteEvents(getApplicationContext(), new FunctionsHelper().datebaseName(getApplicationContext()));
 
 
         btnFollow.setOnClickListener(new View.OnClickListener() {
@@ -66,13 +65,11 @@ public class EventCompleteActivity extends Activity {
                 String description = descriptionEventComplete.getText().toString();
                 String unique_id = getIntent().getExtras().getString("idListEvent");
 
+                createEventInCalendar(date, title, description, place);
+
                 //inserting row in events table
                 //db.deleteEvents();
-                db.addEvent(title,place,date,description,tag,unique_id);
-                Intent i = new Intent(getApplicationContext(),EventsFoundByPlace.class);
-                startActivity(i);
-                finish();
-
+                db.addEvent(title, place, date, description, tag, unique_id);
 
             }
 
@@ -80,11 +77,29 @@ public class EventCompleteActivity extends Activity {
     }
 
     @Override
-    public void onBackPressed(){
+    public void onBackPressed() {
         Intent i = new Intent(getApplicationContext(),
                 EventsFoundByPlace.class);
         startActivity(i);
         finish();
+    }
+
+    private void createEventInCalendar(String date, String title, String desc, String place) {
+        String year = date.substring(0, 4);
+        String month = date.substring(5, 7);
+        String day = date.substring(8, 10);
+
+        java.util.Calendar cal = java.util.Calendar.getInstance();
+        cal.set(Integer.parseInt(year), Integer.parseInt(month) - 1, Integer.parseInt(day));
+
+        Intent intent = new Intent(Intent.ACTION_INSERT);
+        intent.setData(CalendarContract.Events.CONTENT_URI);
+        intent.putExtra(CalendarContract.EXTRA_EVENT_BEGIN_TIME, cal.getTimeInMillis());
+        intent.putExtra(CalendarContract.Events.TITLE, title);
+        intent.putExtra(CalendarContract.Events.DESCRIPTION, desc);
+        intent.putExtra(CalendarContract.Events.EVENT_LOCATION, place);
+        startActivity(intent);
+        
     }
 
 

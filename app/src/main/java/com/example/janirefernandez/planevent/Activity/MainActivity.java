@@ -120,11 +120,5 @@ public class MainActivity extends Activity {
         finish();
     }
 
-    @Override
-    public void onBackPressed(){
-        Intent i = new Intent(getApplicationContext(),
-                SearchEventsActivity.class);
-        startActivity(i);
-        finish();
-    }
+
 }
