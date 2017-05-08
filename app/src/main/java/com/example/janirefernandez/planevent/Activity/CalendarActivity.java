@@ -76,6 +76,9 @@ public class CalendarActivity extends Activity {
         List<Event> events = db.getEventTableDetails();
 
         //Adding Events to calendar
+        
+        myCalendar.deleteAllEvent();
+        
         for (int i = 0; i < events.size(); i++) {
             String date = events.get(i).getDate();
             String year = date.substring(0, 4);
